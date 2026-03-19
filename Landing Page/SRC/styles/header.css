@@ -1,0 +1,118 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-background);
+    z-index: 3;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* order button should stay on right side */
+#navbar .btn-default {
+    order: 1;
+    margin-left: auto;
+}
+
+#cart_btn {
+    margin: 0 16px;
+}
+
+#nav_logo {
+    font-size: 22px;
+    color: var(--color-dark-green);
+}
+
+.logo-link {
+    text-decoration: none;
+    color: var(--color-dark-green);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--color-text);
+    opacity: 0.85;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: var(--color-text);
+    opacity: 1;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list {
+        display: none;
+    }
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+
+    #mobile_nav_list .nav-item a {
+        color: var(--color-text);
+        font-weight: 600;
+    }
+
+    #mobile_nav_list .nav-item.active a {
+        color: var(--color-text);
+        border-bottom: 2px solid var(--color-primary);
+    }
+}

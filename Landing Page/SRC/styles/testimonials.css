@@ -1,0 +1,76 @@
+#avaliacoes {
+    min-height: calc(100vh - 91px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+#testimonial_chef {
+    width: 500px;
+    height: auto;
+}
+
+#avaliacoes .section-subtitle {
+    font-size: 1.3rem;
+}
+
+#testimonials_content {
+    width: 50%;
+}
+
+#feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    background-color: var(--color-background);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+.feedback-stars {
+    font-size: 0.8rem;   
+    order: 2;            
+    color: var(--color-primary);   
+}
+
+.feedback-author {
+    font-size: 0.8rem;   
+    order: 1;
+}
+
+.feedback-text {
+    font-size: 0.9rem;  
+}
+
+@media screen and (max-width: 1170px) {
+    #avaliacoes {
+        flex-direction: column;
+    }
+
+    #avaliacoes .section-subtitle {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #testimonial_chef {
+        display: none;
+    }
+}
+

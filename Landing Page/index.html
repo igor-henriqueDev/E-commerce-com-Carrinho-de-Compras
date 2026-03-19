@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="SRC/styles/styles.css">
+    <link rel="stylesheet" href="SRC/styles/header.css">
+    <link rel="stylesheet" href="SRC/styles/home.css">
+    <link rel="stylesheet" href="SRC/styles/menu.css">
+    <link rel="stylesheet" href="SRC/styles/testimonials.css">
+
+    <!-- SEO meta tags -->
+    <meta name="description" content="Cocktail Cove - os melhores coquetéis da cidade. Faça seu pedido agora mesmo ou confira nosso cardápio exclusivo.">
+    <link rel="icon" href="SRC/images/favicon.ico" type="image/x-icon">
+
+    <title>Cocktail Cove</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar" role="navigation" aria-label="Menu principal">
+            <a href="#home" id="nav_logo" class="logo-link">
+                <i class="fa-solid fa-champagne-glasses"></i> Cocktail Cove
+            </a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home" aria-current="page">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cardapio">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#avaliacoes">Avaliações</a>
+                </li>
+            </ul>
+
+            <button id="cart_btn" aria-label="Abrir carrinho de compras">
+                <i class="fa-solid fa-shopping-cart"></i>
+                <span id="cart_count">0</span>
+            </button>
+
+            <a href="#order" class="btn-default">Peça aqui</a>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cardapio">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#avaliacoes">Avaliações</a>
+                </li>
+            </ul>
+
+            <a href="#order" class="btn-default">Peça aqui</a>
+        </div>
+    </header>
+
+    <!-- shopping cart sidebar -->
+    <div id="cart_sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Meu Carrinho</h2>
+            <button id="close_cart" aria-label="Fechar carrinho">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <div id="cart_items" class="cart-items">
+            <p class="empty-cart">Seu carrinho está vazio</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: R$ <span id="cart_total">0.00</span></strong>
+            </div>
+            <button id="checkout_btn" class="btn-default" disabled>Finalizar Pedido</button>
+        </div>
+    </div>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Bem-vindo ao <span>Cocktail Cove!</span> <br>
+                    Descubra os melhores coquetéis da cidade.
+                </h1>
+
+                <p class="description">
+                    Descubra os melhores coquetéis da cidade, feitos com ingredientes frescos e paixão pela mixologia.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#cardapio" class="btn-default">
+                        Menu
+                    </a>
+
+                    <a href="tel:+5511944338322" id="phone_button" class="btn-default" aria-label="Ligar para (11) 94433-8322">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        (11) 94433-8322
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="SRC/images/drinks.png" alt="Montagem de coquetéis coloridos" loading="lazy">
+
+            </div>
+        </section>
+
+        <section id="cardapio">
+            <h2 class="section-title">Nosso Menu</h2>
+            <h3 class="section-subtitle">Coquetéis artesanais preparados com carinho</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="SRC/images/dish1.png" class=dish-image alt="Coquetel Caipirinha Tropical" loading="lazy"> 
+
+                    <h3 class="dish-title">
+                        Caipirinha Tropical                        
+                    </h3> 
+
+                    <span class="dish-description">
+                        Rum branco, limão tahiti e açúcar mascavo – o sabor do Brasil.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(180+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 29,90</h4>
+                        <button class="btn-default add-to-cart" data-name="Caipirinha Tropical" data-price="29.90">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="SRC/images/dish2.png" class=dish-image alt="Coquetel Margarita Frozen" loading="lazy"> 
+
+                    <h3 class="dish-title">
+                        Margarita Frozen                        
+                    </h3> 
+
+                    <span class="dish-description">
+                        Tequila, Cointreau e limão – servido com borda de sal.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(150+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 34,50</h4>
+                        <button class="btn-default add-to-cart" data-name="Margarita Frozen" data-price="34.50">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="SRC/images/dish3.png" class=dish-image alt="Coquetel Negroni" loading="lazy"> 
+
+                    <h3 class="dish-title">
+                        Negroni                        
+                    </h3> 
+
+                    <span class="dish-description">
+                        Gin, Campari e vermute tinto – amargo e elegante.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(120+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 39,00</h4>
+                        <button class="btn-default add-to-cart" data-name="Negroni" data-price="39.00">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="SRC/images/dish4.png" class=dish-image alt="Coquetel Piña Colada" loading="lazy"> 
+
+                    <h3 class="dish-title">
+                        Piña Colada                        
+                    </h3> 
+
+                    <span class="dish-description">
+                        Rum, leite de coco e abacaxi – doce como o Caribe.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(90+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 32,00</h4>
+                        <button class="btn-default add-to-cart" data-name="Piña Colada" data-price="32.00">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2 class="section-title">Faça seu pedido</h2>
+            <h3 class="section-subtitle">Preencha o formulário e entraremos em contato</h3>
+            <form id="order_form" action="#" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="cocktail">Coquetel:</label>
+                <select id="cocktail" name="cocktail" required>
+                    <option value="Caipirinha Tropical">Caipirinha Tropical</option>
+                    <option value="Margarita Frozen">Margarita Frozen</option>
+                    <option value="Negroni">Negroni</option>
+                    <option value="Piña Colada">Piña Colada</option>
+                </select>
+
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                <button type="submit" class="btn-default">Enviar pedido</button>
+            </form>
+        </section>
+
+        <section id="avaliacoes">
+            <img src="SRC/images/avaliação.png" id="testimonial_chef" alt="Chef sorrindo segurando bebida" loading="lazy">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que nossos clientes dizem sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <div class="feedback-header">
+                            <div class="feedback-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="feedback-author">- Maria Silva</span>
+                        </div>
+                        <p class="feedback-text">
+                            "Excelente atendimento e coquetéis deliciosos! Voltarei com certeza."
+                        </p>
+                    </div>
+
+                    <div class="feedback">
+                        <div class="feedback-header">
+                            <div class="feedback-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="feedback-author">- João Santos</span>
+                        </div>
+                        <p class="feedback-text">
+                            "Melhor bar da cidade! Ambiente aconchegante e drinks incríveis."
+                        </p>
+                    </div>
+
+                    <div class="feedback">
+                        <div class="feedback-header">
+                            <div class="feedback-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="feedback-author">- Ana Costa</span>
+                        </div>
+                        <p class="feedback-text">
+                            "O Mojito Clássico é fantástico! Recomendo para todos os amigos."
+                        </p>
+                    </div>
+
+                    <div class="feedback">
+                        <div class="feedback-header">
+                            <div class="feedback-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="feedback-author">- Pedro Oliveira</span>
+                        </div>
+                        <p class="feedback-text">
+                            "Ótima experiência, equipe muito atenciosa e profissional."
+                        </p>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais depoimentos
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="SRC/javascript/script.js"></script>
+    
+    <footer>
+        <p>&copy; 2026 Cocktail Cove. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:contato@cocktailcove.com">contato@cocktailcove.com</a> | <a href="tel:+5511944338322">(11) 94433-8322</a></p>
+    </footer>
+</body>
+</html>
